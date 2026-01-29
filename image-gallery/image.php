@@ -19,25 +19,3 @@ include './inc/images.inc.php';
 <a href="gallery.php">Back to gallery!</a>
 
 <?php include './views/footer.php'; ?>
-<?php
-$emailTemplate = "Dear [NAME],\n\nWe're excited to share with you this week's featured article:\n\n[ARTICLE]\n\nUpcoming Events:\n[EVENTS]\n\nBest regards,\nYour Friendly Team";
-$recipient = ['name' => 'Alice', 'segment' => 'Tech Enthusiast', 'email' => 'alice@example.com'];
-$segmentContent = [
-    'Tech Enthusiast' => "The Latest in Tech: Top Gadgets",
-    'Health Guru' => "Transform Your Lifestyle: The Best of Health and Fitness",
-];
-$events = [
-    "Webinar on Future Tech Trends", 
-    "Photography Workshop", 
-    "Health and Wellness Retreat"
-];
-
-$personalizedEmail = str_replace("[NAME]", $recipient['name'], $emailTemplate);
-$personalizedEmail = str_replace("[ARTICLE]", $segmentContent[$recipient['segment']], $personalizedEmail);
-$events_formated = [];
-foreach($events as $e){
-    $events_formated[] = "- {$e}";
-}
-$personalizedEmail = str_replace("[EVENTS]", implode("\n", $events_formated), $personalizedEmail);
-echo $personalizedEmail;
-?>
