@@ -1,0 +1,30 @@
+a.active,
+a.active:visited {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-link,
+input[type="submit"].btn-link,
+button.btn-link {
+  display: inline;
+  color: var(--accent);
+  border: 0 solid transparent;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  text-decoration: underline;
+  border-radius: 0px;
+}
+
+.btn-link:hover,
+input[type="submit"].btn-link:hover,
+button.btn-link:hover {
+  text-decoration: none;
+  color: var(--accent);
+  filter: none;
+}
+
+form {
+  display: inline;
+}
