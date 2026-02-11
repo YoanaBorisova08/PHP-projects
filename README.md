@@ -9,3 +9,6 @@ All the projects I've made during the "Modern PHP: The Complete Guide - from Beg
  - [Auto update Travel Showcase](auto-update-travel-showcase)
  - [Diary App](diary-app)
  - [Name Explorer App](names)
+ - [City Explorer App](cities)
+ - [Weather App](weather-app)
+ - [Content Management System](content-management-system)
